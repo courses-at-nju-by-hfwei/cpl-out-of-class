@@ -4,4 +4,5 @@ add_executable(scanf-c17-ex3.c)
 add_executable(scanf-c17-ex4 scanf-c17-ex4.c)
 add_executable(scanf-c17-ex5.c)
 
+add_executable(cref-note cref-note.c)
 add_executable(cref-ex cref-ex.c)
