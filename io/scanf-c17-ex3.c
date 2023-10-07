@@ -43,6 +43,8 @@ int main(void) {
   // count = 0; // "100e" fails to match "%f" // 100.000000 rgs energy!!! (not conformed to the C Standard)
   // count = EOF;
 
+  // A bug in gcc: https://sourceware.org/bugzilla/show_bug.cgi?id=1765#c1
+
   // input & output:
   // 2 quarts of oil
   // quant = 2.000000
