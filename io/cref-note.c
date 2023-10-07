@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 
+// Example from c-reference: https://en.cppreference.com/w/c/io/fscanf
 int main(void) {
   int a = 0;
   int b = 0;
