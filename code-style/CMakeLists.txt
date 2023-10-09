@@ -1,0 +1,1 @@
+add_executable(ugly-elegant ugly-elegant.c)
