@@ -1,3 +1,13 @@
 # ninja log v5
 3	163	7184791332825034	code-style/CMakeFiles/ugly-elegant.dir/ugly-elegant.c.obj	25eb1dfd3c9ee6fb
 165	368	7184791334803455	code-style/ugly-elegant.exe	e145c6c5665c31d
+10	323	7185649226372927	for/CMakeFiles/for-semantics.dir/for-semantics.c.obj	c4e0b4c83670f4d2
+324	814	7185649231060054	for/for-semantics.exe	63bd92b5b0095805
+4	134	7185653999341096	for/CMakeFiles/for-semantics.dir/for-semantics.c.obj	c4e0b4c83670f4d2
+135	285	7185654000796575	for/for-semantics.exe	63bd92b5b0095805
+16	394	7185659574477623	for/CMakeFiles/for-semantics.dir/for-semantics.c.obj	c4e0b4c83670f4d2
+396	1357	7185659583943836	for/for-semantics.exe	63bd92b5b0095805
+8	201	7185667088707163	for/CMakeFiles/for-semantics.dir/for-semantics.c.obj	c4e0b4c83670f4d2
+202	432	7185667090853656	for/for-semantics.exe	63bd92b5b0095805
+5	166	7185669340825352	for/CMakeFiles/for-semantics.dir/for-semantics.c.obj	c4e0b4c83670f4d2
+166	340	7185669342505987	for/for-semantics.exe	63bd92b5b0095805
