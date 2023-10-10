@@ -108,7 +108,13 @@
 			"path" : "io/CMakeLists.txt"
 		},
 		{
+			"path" : "if/CMakeLists.txt"
+		},
+		{
 			"path" : "for/CMakeLists.txt"
+		},
+		{
+			"path" : "misc/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
