@@ -5,13 +5,10 @@
 // Example from c-reference
 // See https://en.cppreference.com/w/c/io/fscanf
 
-#define __STDC_WANT_LIB_EXT1__ 1
 #include <stdio.h>
-#include <stddef.h>
 #include <locale.h>
 
-int main(void)
-{
+int main(void) {
   int i, j;
   float x, y;
   char str1[10], str2[4];
@@ -20,14 +17,14 @@ int main(void)
 
   char input[] = "25 54.32E-1 Thompson 56789 0123 56ß水";
   /* parse as follows:
-     %d: an integer
-     %f: a floating-point value
-     %9s: a string of at most 9 non-whitespace characters
-     %2d: two-digit integer (digits 5 and 6)
-     %f:  a floating-point value (digits 7, 8, 9)
-     %*d: an integer which isn't stored anywhere
+     %d: an integer               (25)
+     %f: a floating-point value   (5.432000)
+     %9s: a string of at most 9 non-whitespace characters   (Thompson)
+     %2d: two-digit integer (digits 5 and 6)                (56)
+     %f:  a floating-point value (digits 7, 8, 9)           (789.000000)
+     %*d: an integer which isn't stored anywhere            (0123)
      ' ': all consecutive whitespace
-     %3[0-9]: a string of at most 3 decimal digits (digits 5 and 6)
+     %3[0-9]: a string of at most 3 decimal digits (digits 5 and 6)  (56)
      %2lc: two wide characters, using multibyte to wide conversion  */
   int ret = sscanf(input, "%d%f%9s%2d%f%*d %3[0-9]%2lc",
                    &i, &x, str1, &j, &y, str2, warr);

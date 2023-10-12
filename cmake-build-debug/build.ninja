@@ -389,37 +389,37 @@ build io/rebuild_cache: phony io/CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for EXECUTABLE target if
+# Object build statements for EXECUTABLE target switch
 
 
 #############################################
-# Order-only phony target for if
+# Order-only phony target for switch
 
-build cmake_object_order_depends_target_if: phony || if/CMakeFiles/if.dir
+build cmake_object_order_depends_target_switch: phony || if/CMakeFiles/switch.dir
 
-build if/CMakeFiles/if.dir/if.c.obj: C_COMPILER__if_unscanned_Debug D$:/cpl/cpl-out-of-class/if/if.c || cmake_object_order_depends_target_if
-  DEP_FILE = if\CMakeFiles\if.dir\if.c.obj.d
+build if/CMakeFiles/switch.dir/switch.c.obj: C_COMPILER__switch_unscanned_Debug D$:/cpl/cpl-out-of-class/if/switch.c || cmake_object_order_depends_target_switch
+  DEP_FILE = if\CMakeFiles\switch.dir\switch.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = if\CMakeFiles\if.dir
-  OBJECT_FILE_DIR = if\CMakeFiles\if.dir
+  OBJECT_DIR = if\CMakeFiles\switch.dir
+  OBJECT_FILE_DIR = if\CMakeFiles\switch.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target if
+# Link build statements for EXECUTABLE target switch
 
 
 #############################################
-# Link the executable if\if.exe
+# Link the executable if\switch.exe
 
-build if/if.exe: C_EXECUTABLE_LINKER__if_Debug if/CMakeFiles/if.dir/if.c.obj
+build if/switch.exe: C_EXECUTABLE_LINKER__switch_Debug if/CMakeFiles/switch.dir/switch.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = if\CMakeFiles\if.dir
+  OBJECT_DIR = if\CMakeFiles\switch.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = if\if.exe
-  TARGET_IMPLIB = if\libif.dll.a
-  TARGET_PDB = if.exe.dbg
+  TARGET_FILE = if\switch.exe
+  TARGET_IMPLIB = if\libswitch.dll.a
+  TARGET_PDB = switch.exe.dbg
 
 
 #############################################
@@ -481,6 +481,39 @@ build for/for-semantics.exe: C_EXECUTABLE_LINKER__for-semantics_Debug for/CMakeF
   TARGET_FILE = for\for-semantics.exe
   TARGET_IMPLIB = for\libfor-semantics.dll.a
   TARGET_PDB = for-semantics.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target rose
+
+
+#############################################
+# Order-only phony target for rose
+
+build cmake_object_order_depends_target_rose: phony || for/CMakeFiles/rose.dir
+
+build for/CMakeFiles/rose.dir/rose.c.obj: C_COMPILER__rose_unscanned_Debug D$:/cpl/cpl-out-of-class/for/rose.c || cmake_object_order_depends_target_rose
+  DEP_FILE = for\CMakeFiles\rose.dir\rose.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = for\CMakeFiles\rose.dir
+  OBJECT_FILE_DIR = for\CMakeFiles\rose.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target rose
+
+
+#############################################
+# Link the executable for\rose.exe
+
+build for/rose.exe: C_EXECUTABLE_LINKER__rose_Debug for/CMakeFiles/rose.dir/rose.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = for\CMakeFiles\rose.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = for\rose.exe
+  TARGET_IMPLIB = for\librose.dll.a
+  TARGET_PDB = rose.exe.dbg
 
 
 #############################################
@@ -548,9 +581,9 @@ build for-semantics: phony for/for-semantics.exe
 
 build for-semantics.exe: phony for/for-semantics.exe
 
-build if: phony if/if.exe
+build rose: phony for/rose.exe
 
-build if.exe: phony if/if.exe
+build rose.exe: phony for/rose.exe
 
 build scanf-c17-ex1: phony io/scanf-c17-ex1.exe
 
@@ -571,6 +604,10 @@ build scanf-c17-ex4.exe: phony io/scanf-c17-ex4.exe
 build scanf-c17-ex5: phony io/scanf-c17-ex5.exe
 
 build scanf-c17-ex5.exe: phony io/scanf-c17-ex5.exe
+
+build switch: phony if/switch.exe
+
+build switch.exe: phony if/switch.exe
 
 build ugly-elegant: phony code-style/ugly-elegant.exe
 
@@ -598,14 +635,14 @@ build code-style/all: phony code-style/ugly-elegant.exe
 #############################################
 # Folder: D:/cpl/cpl-out-of-class/cmake-build-debug/for
 
-build for/all: phony for/for-semantics.exe
+build for/all: phony for/for-semantics.exe for/rose.exe
 
 # =============================================================================
 
 #############################################
 # Folder: D:/cpl/cpl-out-of-class/cmake-build-debug/if
 
-build if/all: phony if/if.exe
+build if/all: phony if/switch.exe
 
 # =============================================================================
 

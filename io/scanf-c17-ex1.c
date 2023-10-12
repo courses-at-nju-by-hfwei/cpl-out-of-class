@@ -12,7 +12,9 @@ int main(void) {
   char name[50];
 
   // original: fscanf
-  n = sscanf("25 54.32E-1 thompson", "%d%lf%s", &i, &x, name);
+  n = sscanf("25 54.32E-1 thompson",
+             "%d%lf%49s",
+             &i, &x, name);
 
   // n = 3
   // i = 25
@@ -26,10 +28,10 @@ int main(void) {
 
   printf("\n");
 
-  // UB
+  // UB (Undefined Behavior)
   // n = 3
-  // wrong-i = 0.000000
-  // wrong-x = 893353198
+  // wrong-i = 0.000000       (i = 25)
+  // wrong-x = 893353198      (x = 5.432000)
   // name = thompson
   printf("n = %d\n"
          "wrong-i = %f\n"
