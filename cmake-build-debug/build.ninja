@@ -360,6 +360,39 @@ build io/cref-ex.exe: C_EXECUTABLE_LINKER__cref-ex_Debug io/CMakeFiles/cref-ex.d
   TARGET_IMPLIB = io\libcref-ex.dll.a
   TARGET_PDB = cref-ex.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target scanf-indeterminate
+
+
+#############################################
+# Order-only phony target for scanf-indeterminate
+
+build cmake_object_order_depends_target_scanf-indeterminate: phony || io/CMakeFiles/scanf-indeterminate.dir
+
+build io/CMakeFiles/scanf-indeterminate.dir/scanf-indeterminate.c.obj: C_COMPILER__scanf-indeterminate_unscanned_Debug D$:/cpl/cpl-out-of-class/io/scanf-indeterminate.c || cmake_object_order_depends_target_scanf-indeterminate
+  DEP_FILE = io\CMakeFiles\scanf-indeterminate.dir\scanf-indeterminate.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = io\CMakeFiles\scanf-indeterminate.dir
+  OBJECT_FILE_DIR = io\CMakeFiles\scanf-indeterminate.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target scanf-indeterminate
+
+
+#############################################
+# Link the executable io\scanf-indeterminate.exe
+
+build io/scanf-indeterminate.exe: C_EXECUTABLE_LINKER__scanf-indeterminate_Debug io/CMakeFiles/scanf-indeterminate.dir/scanf-indeterminate.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = io\CMakeFiles\scanf-indeterminate.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = io\scanf-indeterminate.exe
+  TARGET_IMPLIB = io\libscanf-indeterminate.dll.a
+  TARGET_PDB = scanf-indeterminate.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -605,6 +638,10 @@ build scanf-c17-ex5: phony io/scanf-c17-ex5.exe
 
 build scanf-c17-ex5.exe: phony io/scanf-c17-ex5.exe
 
+build scanf-indeterminate: phony io/scanf-indeterminate.exe
+
+build scanf-indeterminate.exe: phony io/scanf-indeterminate.exe
+
 build switch: phony if/switch.exe
 
 build switch.exe: phony if/switch.exe
@@ -649,7 +686,7 @@ build if/all: phony if/switch.exe
 #############################################
 # Folder: D:/cpl/cpl-out-of-class/cmake-build-debug/io
 
-build io/all: phony io/scanf-c17-ex1.exe io/scanf-c17-ex2.exe io/scanf-c17-ex3.exe io/scanf-c17-ex4.exe io/scanf-c17-ex5.exe io/cref-note.exe io/cref-ex.exe
+build io/all: phony io/scanf-c17-ex1.exe io/scanf-c17-ex2.exe io/scanf-c17-ex3.exe io/scanf-c17-ex4.exe io/scanf-c17-ex5.exe io/cref-note.exe io/cref-ex.exe io/scanf-indeterminate.exe
 
 # =============================================================================
 

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "for/rose.exe"
+			"path" : "io/scanf-indeterminate.exe"
 		},
 		{
-			"path" : "for/rose.pdb"
+			"path" : "io/scanf-indeterminate.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -17,7 +17,7 @@
 		],
 		"files" : 
 		[
-			"for/CMakeLists.txt"
+			"io/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 2,
+				"line" : 10,
 				"parent" : 0
 			}
 		]
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "rose::@9cf1bdedf1c047c56be4",
+	"id" : "scanf-indeterminate::@9998546b0f8df173ae92",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,12 +76,12 @@
 		],
 		"language" : "C"
 	},
-	"name" : "rose",
-	"nameOnDisk" : "rose.exe",
+	"name" : "scanf-indeterminate",
+	"nameOnDisk" : "scanf-indeterminate.exe",
 	"paths" : 
 	{
-		"build" : "for",
-		"source" : "for"
+		"build" : "io",
+		"source" : "io"
 	},
 	"sourceGroups" : 
 	[
@@ -98,7 +98,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "for/rose.c",
+			"path" : "io/scanf-indeterminate.c",
 			"sourceGroupIndex" : 0
 		}
 	],
