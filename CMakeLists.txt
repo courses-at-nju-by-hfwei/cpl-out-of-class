@@ -9,4 +9,8 @@ add_subdirectory(io)
 add_subdirectory(if)
 add_subdirectory(for)
 
+add_subdirectory(timing)
+
+add_subdirectory(static)
+
 add_subdirectory(misc)
