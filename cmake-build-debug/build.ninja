@@ -797,6 +797,67 @@ build static/rebuild_cache: phony static/CMakeFiles/rebuild_cache.util
 # D:/cpl/cpl-out-of-class/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for EXECUTABLE target func-void
+
+
+#############################################
+# Order-only phony target for func-void
+
+build cmake_object_order_depends_target_func-void: phony || function/CMakeFiles/func-void.dir
+
+build function/CMakeFiles/func-void.dir/func-void.c.obj: C_COMPILER__func-void_unscanned_Debug D$:/cpl/cpl-out-of-class/function/func-void.c || cmake_object_order_depends_target_func-void
+  DEP_FILE = function\CMakeFiles\func-void.dir\func-void.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = function\CMakeFiles\func-void.dir
+  OBJECT_FILE_DIR = function\CMakeFiles\func-void.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target func-void
+
+
+#############################################
+# Link the executable function\func-void.exe
+
+build function/func-void.exe: C_EXECUTABLE_LINKER__func-void_Debug function/CMakeFiles/func-void.dir/func-void.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = function\CMakeFiles\func-void.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = function\func-void.exe
+  TARGET_IMPLIB = function\libfunc-void.dll.a
+  TARGET_PDB = func-void.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build function/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\cpl\cpl-out-of-class\cmake-build-debug\function && "C:\Users\hfwei\AppData\Local\Programs\CLion 2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build function/edit_cache: phony function/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build function/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\cpl\cpl-out-of-class\cmake-build-debug\function && "C:\Users\hfwei\AppData\Local\Programs\CLion 2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\cpl\cpl-out-of-class -BD:\cpl\cpl-out-of-class\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build function/rebuild_cache: phony function/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/cpl/cpl-out-of-class/CMakeLists.txt
+# =============================================================================
+
 
 #############################################
 # Utility command for edit_cache
@@ -838,6 +899,10 @@ build fib.exe: phony static/fib.exe
 build for-semantics: phony for/for-semantics.exe
 
 build for-semantics.exe: phony for/for-semantics.exe
+
+build func-void: phony function/func-void.exe
+
+build func-void.exe: phony function/func-void.exe
 
 build primes: phony timing/primes.exe
 
@@ -899,7 +964,7 @@ build uid.exe: phony static/uid.exe
 #############################################
 # Folder: D:/cpl/cpl-out-of-class/cmake-build-debug
 
-build all: phony code-style/all io/all if/all for/all timing/all static/all misc/all
+build all: phony code-style/all io/all if/all for/all timing/all static/all function/all misc/all
 
 # =============================================================================
 
@@ -914,6 +979,13 @@ build code-style/all: phony code-style/ugly-elegant.exe
 # Folder: D:/cpl/cpl-out-of-class/cmake-build-debug/for
 
 build for/all: phony for/for-semantics.exe for/rose.exe
+
+# =============================================================================
+
+#############################################
+# Folder: D:/cpl/cpl-out-of-class/cmake-build-debug/function
+
+build function/all: phony function/func-void.exe
 
 # =============================================================================
 
@@ -957,14 +1029,14 @@ build timing/all: phony timing/primes.exe timing/selection-sort.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.27.0/CMakeCCompiler.cmake CMakeFiles/3.27.0/CMakeRCCompiler.cmake CMakeFiles/3.27.0/CMakeSystem.cmake D$:/cpl/cpl-out-of-class/CMakeLists.txt D$:/cpl/cpl-out-of-class/code-style/CMakeLists.txt D$:/cpl/cpl-out-of-class/for/CMakeLists.txt D$:/cpl/cpl-out-of-class/if/CMakeLists.txt D$:/cpl/cpl-out-of-class/io/CMakeLists.txt D$:/cpl/cpl-out-of-class/misc/CMakeLists.txt D$:/cpl/cpl-out-of-class/static/CMakeLists.txt D$:/cpl/cpl-out-of-class/timing/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.27.0/CMakeCCompiler.cmake CMakeFiles/3.27.0/CMakeRCCompiler.cmake CMakeFiles/3.27.0/CMakeSystem.cmake D$:/cpl/cpl-out-of-class/CMakeLists.txt D$:/cpl/cpl-out-of-class/code-style/CMakeLists.txt D$:/cpl/cpl-out-of-class/for/CMakeLists.txt D$:/cpl/cpl-out-of-class/function/CMakeLists.txt D$:/cpl/cpl-out-of-class/if/CMakeLists.txt D$:/cpl/cpl-out-of-class/io/CMakeLists.txt D$:/cpl/cpl-out-of-class/misc/CMakeLists.txt D$:/cpl/cpl-out-of-class/static/CMakeLists.txt D$:/cpl/cpl-out-of-class/timing/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.27.0/CMakeCCompiler.cmake CMakeFiles/3.27.0/CMakeRCCompiler.cmake CMakeFiles/3.27.0/CMakeSystem.cmake D$:/cpl/cpl-out-of-class/CMakeLists.txt D$:/cpl/cpl-out-of-class/code-style/CMakeLists.txt D$:/cpl/cpl-out-of-class/for/CMakeLists.txt D$:/cpl/cpl-out-of-class/if/CMakeLists.txt D$:/cpl/cpl-out-of-class/io/CMakeLists.txt D$:/cpl/cpl-out-of-class/misc/CMakeLists.txt D$:/cpl/cpl-out-of-class/static/CMakeLists.txt D$:/cpl/cpl-out-of-class/timing/CMakeLists.txt: phony
+build C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.27.0/CMakeCCompiler.cmake CMakeFiles/3.27.0/CMakeRCCompiler.cmake CMakeFiles/3.27.0/CMakeSystem.cmake D$:/cpl/cpl-out-of-class/CMakeLists.txt D$:/cpl/cpl-out-of-class/code-style/CMakeLists.txt D$:/cpl/cpl-out-of-class/for/CMakeLists.txt D$:/cpl/cpl-out-of-class/function/CMakeLists.txt D$:/cpl/cpl-out-of-class/if/CMakeLists.txt D$:/cpl/cpl-out-of-class/io/CMakeLists.txt D$:/cpl/cpl-out-of-class/misc/CMakeLists.txt D$:/cpl/cpl-out-of-class/static/CMakeLists.txt D$:/cpl/cpl-out-of-class/timing/CMakeLists.txt: phony
 
 
 #############################################

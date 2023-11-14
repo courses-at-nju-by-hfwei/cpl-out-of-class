@@ -13,4 +13,6 @@ add_subdirectory(timing)
 
 add_subdirectory(static)
 
+add_subdirectory(function)
+
 add_subdirectory(misc)

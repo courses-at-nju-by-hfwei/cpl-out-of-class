@@ -1,0 +1,1 @@
+add_executable(func-void func-void.c)
