@@ -15,7 +15,8 @@
 						5,
 						6,
 						7,
-						8
+						8,
+						9
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -37,7 +38,7 @@
 					"source" : "code-style",
 					"targetIndexes" : 
 					[
-						16
+						17
 					]
 				},
 				{
@@ -74,7 +75,7 @@
 					"source" : "if",
 					"targetIndexes" : 
 					[
-						15
+						16
 					]
 				},
 				{
@@ -123,7 +124,7 @@
 					[
 						2,
 						6,
-						17
+						18
 					]
 				},
 				{
@@ -139,6 +140,21 @@
 					"targetIndexes" : 
 					[
 						4
+					]
+				},
+				{
+					"build" : "string",
+					"jsonFile" : "directory-string-Debug-ca06b61e63f80ea8e244.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "string",
+					"targetIndexes" : 
+					[
+						15
 					]
 				},
 				{
@@ -167,7 +183,8 @@
 						5,
 						6,
 						7,
-						8
+						8,
+						9
 					],
 					"name" : "2023-cpl-coding-2",
 					"targetIndexes" : 
@@ -189,7 +206,8 @@
 						14,
 						15,
 						16,
-						17
+						17,
+						18
 					]
 				}
 			],
@@ -301,6 +319,13 @@
 					"projectIndex" : 0
 				},
 				{
+					"directoryIndex" : 8,
+					"id" : "string-literals::@22e829107201c6b975b1",
+					"jsonFile" : "target-string-literals-Debug-167c7b85f4874439e2d7.json",
+					"name" : "string-literals",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 3,
 					"id" : "switch::@2caa1cfd2991f5982506",
 					"jsonFile" : "target-switch-Debug-e64fc478906f6073ca7e.json",
@@ -333,6 +358,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 5
 	}
 }

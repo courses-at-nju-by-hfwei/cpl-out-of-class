@@ -36,7 +36,7 @@ int main(void) {
   printf("\ncount = %d\n", count);
 
   time_t end = time(NULL);
-  printf("Time elapsed: %ld seconds\n", end - start);
+  printf("Time elapsed: %lld seconds\n", end - start);
 
   return 0;
 }

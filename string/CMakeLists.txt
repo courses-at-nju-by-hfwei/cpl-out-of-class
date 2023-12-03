@@ -1,0 +1,1 @@
+add_executable(string-literals string-literals.c)
