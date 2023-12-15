@@ -126,6 +126,9 @@
 			"path" : "string/CMakeLists.txt"
 		},
 		{
+			"path" : "pointers/CMakeLists.txt"
+		},
+		{
 			"path" : "misc/CMakeLists.txt"
 		}
 	],

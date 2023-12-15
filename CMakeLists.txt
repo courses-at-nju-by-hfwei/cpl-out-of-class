@@ -17,4 +17,6 @@ add_subdirectory(function)
 
 add_subdirectory(string)
 
+add_subdirectory(pointers)
+
 add_subdirectory(misc)

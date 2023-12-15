@@ -919,6 +919,133 @@ build string/rebuild_cache: phony string/CMakeFiles/rebuild_cache.util
 # D:/cpl/cpl-out-of-class/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for EXECUTABLE target pointers-with-const
+
+
+#############################################
+# Order-only phony target for pointers-with-const
+
+build cmake_object_order_depends_target_pointers-with-const: phony || pointers/CMakeFiles/pointers-with-const.dir
+
+build pointers/CMakeFiles/pointers-with-const.dir/pointers-with-const.c.obj: C_COMPILER__pointers-with-const_unscanned_Debug D$:/cpl/cpl-out-of-class/pointers/pointers-with-const.c || cmake_object_order_depends_target_pointers-with-const
+  DEP_FILE = pointers\CMakeFiles\pointers-with-const.dir\pointers-with-const.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = pointers\CMakeFiles\pointers-with-const.dir
+  OBJECT_FILE_DIR = pointers\CMakeFiles\pointers-with-const.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pointers-with-const
+
+
+#############################################
+# Link the executable pointers\pointers-with-const.exe
+
+build pointers/pointers-with-const.exe: C_EXECUTABLE_LINKER__pointers-with-const_Debug pointers/CMakeFiles/pointers-with-const.dir/pointers-with-const.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = pointers\CMakeFiles\pointers-with-const.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pointers\pointers-with-const.exe
+  TARGET_IMPLIB = pointers\libpointers-with-const.dll.a
+  TARGET_PDB = pointers-with-const.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target nullptr
+
+
+#############################################
+# Order-only phony target for nullptr
+
+build cmake_object_order_depends_target_nullptr: phony || pointers/CMakeFiles/nullptr.dir
+
+build pointers/CMakeFiles/nullptr.dir/nullptr.c.obj: C_COMPILER__nullptr_unscanned_Debug D$:/cpl/cpl-out-of-class/pointers/nullptr.c || cmake_object_order_depends_target_nullptr
+  DEP_FILE = pointers\CMakeFiles\nullptr.dir\nullptr.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = pointers\CMakeFiles\nullptr.dir
+  OBJECT_FILE_DIR = pointers\CMakeFiles\nullptr.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target nullptr
+
+
+#############################################
+# Link the executable pointers\nullptr.exe
+
+build pointers/nullptr.exe: C_EXECUTABLE_LINKER__nullptr_Debug pointers/CMakeFiles/nullptr.dir/nullptr.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = pointers\CMakeFiles\nullptr.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pointers\nullptr.exe
+  TARGET_IMPLIB = pointers\libnullptr.dll.a
+  TARGET_PDB = nullptr.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sizeof
+
+
+#############################################
+# Order-only phony target for sizeof
+
+build cmake_object_order_depends_target_sizeof: phony || pointers/CMakeFiles/sizeof.dir
+
+build pointers/CMakeFiles/sizeof.dir/array-and-pointer.c.obj: C_COMPILER__sizeof_unscanned_Debug D$:/cpl/cpl-out-of-class/pointers/array-and-pointer.c || cmake_object_order_depends_target_sizeof
+  DEP_FILE = pointers\CMakeFiles\sizeof.dir\array-and-pointer.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = pointers\CMakeFiles\sizeof.dir
+  OBJECT_FILE_DIR = pointers\CMakeFiles\sizeof.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sizeof
+
+
+#############################################
+# Link the executable pointers\sizeof.exe
+
+build pointers/sizeof.exe: C_EXECUTABLE_LINKER__sizeof_Debug pointers/CMakeFiles/sizeof.dir/array-and-pointer.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = pointers\CMakeFiles\sizeof.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pointers\sizeof.exe
+  TARGET_IMPLIB = pointers\libsizeof.dll.a
+  TARGET_PDB = sizeof.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build pointers/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\cpl\cpl-out-of-class\cmake-build-debug\pointers && "C:\Users\hfwei\AppData\Local\Programs\CLion 3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build pointers/edit_cache: phony pointers/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build pointers/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\cpl\cpl-out-of-class\cmake-build-debug\pointers && "C:\Users\hfwei\AppData\Local\Programs\CLion 3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\cpl\cpl-out-of-class -BD:\cpl\cpl-out-of-class\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build pointers/rebuild_cache: phony pointers/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/cpl/cpl-out-of-class/CMakeLists.txt
+# =============================================================================
+
 
 #############################################
 # Utility command for edit_cache
@@ -965,6 +1092,14 @@ build func-void: phony function/func-void.exe
 
 build func-void.exe: phony function/func-void.exe
 
+build nullptr: phony pointers/nullptr.exe
+
+build nullptr.exe: phony pointers/nullptr.exe
+
+build pointers-with-const: phony pointers/pointers-with-const.exe
+
+build pointers-with-const.exe: phony pointers/pointers-with-const.exe
+
 build primes: phony timing/primes.exe
 
 build primes.exe: phony timing/primes.exe
@@ -1005,6 +1140,10 @@ build selection-sort: phony timing/selection-sort.exe
 
 build selection-sort.exe: phony timing/selection-sort.exe
 
+build sizeof: phony pointers/sizeof.exe
+
+build sizeof.exe: phony pointers/sizeof.exe
+
 build string-literals: phony string/string-literals.exe
 
 build string-literals.exe: phony string/string-literals.exe
@@ -1029,7 +1168,7 @@ build uid.exe: phony static/uid.exe
 #############################################
 # Folder: D:/cpl/cpl-out-of-class/cmake-build-debug
 
-build all: phony code-style/all io/all if/all for/all timing/all static/all function/all string/all misc/all
+build all: phony code-style/all io/all if/all for/all timing/all static/all function/all string/all pointers/all misc/all
 
 # =============================================================================
 
@@ -1076,6 +1215,13 @@ build misc/all: phony
 # =============================================================================
 
 #############################################
+# Folder: D:/cpl/cpl-out-of-class/cmake-build-debug/pointers
+
+build pointers/all: phony pointers/pointers-with-const.exe pointers/nullptr.exe pointers/sizeof.exe
+
+# =============================================================================
+
+#############################################
 # Folder: D:/cpl/cpl-out-of-class/cmake-build-debug/static
 
 build static/all: phony static/uid.exe static/fib.exe static/rand.exe
@@ -1101,14 +1247,14 @@ build timing/all: phony timing/primes.exe timing/selection-sort.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/cpl/cpl-out-of-class/CMakeLists.txt D$:/cpl/cpl-out-of-class/code-style/CMakeLists.txt D$:/cpl/cpl-out-of-class/for/CMakeLists.txt D$:/cpl/cpl-out-of-class/function/CMakeLists.txt D$:/cpl/cpl-out-of-class/if/CMakeLists.txt D$:/cpl/cpl-out-of-class/io/CMakeLists.txt D$:/cpl/cpl-out-of-class/misc/CMakeLists.txt D$:/cpl/cpl-out-of-class/static/CMakeLists.txt D$:/cpl/cpl-out-of-class/string/CMakeLists.txt D$:/cpl/cpl-out-of-class/timing/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/cpl/cpl-out-of-class/CMakeLists.txt D$:/cpl/cpl-out-of-class/code-style/CMakeLists.txt D$:/cpl/cpl-out-of-class/for/CMakeLists.txt D$:/cpl/cpl-out-of-class/function/CMakeLists.txt D$:/cpl/cpl-out-of-class/if/CMakeLists.txt D$:/cpl/cpl-out-of-class/io/CMakeLists.txt D$:/cpl/cpl-out-of-class/misc/CMakeLists.txt D$:/cpl/cpl-out-of-class/pointers/CMakeLists.txt D$:/cpl/cpl-out-of-class/static/CMakeLists.txt D$:/cpl/cpl-out-of-class/string/CMakeLists.txt D$:/cpl/cpl-out-of-class/timing/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/cpl/cpl-out-of-class/CMakeLists.txt D$:/cpl/cpl-out-of-class/code-style/CMakeLists.txt D$:/cpl/cpl-out-of-class/for/CMakeLists.txt D$:/cpl/cpl-out-of-class/function/CMakeLists.txt D$:/cpl/cpl-out-of-class/if/CMakeLists.txt D$:/cpl/cpl-out-of-class/io/CMakeLists.txt D$:/cpl/cpl-out-of-class/misc/CMakeLists.txt D$:/cpl/cpl-out-of-class/static/CMakeLists.txt D$:/cpl/cpl-out-of-class/string/CMakeLists.txt D$:/cpl/cpl-out-of-class/timing/CMakeLists.txt: phony
+build C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/hfwei/AppData/Local/Programs/CLion$ 3/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/cpl/cpl-out-of-class/CMakeLists.txt D$:/cpl/cpl-out-of-class/code-style/CMakeLists.txt D$:/cpl/cpl-out-of-class/for/CMakeLists.txt D$:/cpl/cpl-out-of-class/function/CMakeLists.txt D$:/cpl/cpl-out-of-class/if/CMakeLists.txt D$:/cpl/cpl-out-of-class/io/CMakeLists.txt D$:/cpl/cpl-out-of-class/misc/CMakeLists.txt D$:/cpl/cpl-out-of-class/pointers/CMakeLists.txt D$:/cpl/cpl-out-of-class/static/CMakeLists.txt D$:/cpl/cpl-out-of-class/string/CMakeLists.txt D$:/cpl/cpl-out-of-class/timing/CMakeLists.txt: phony
 
 
 #############################################

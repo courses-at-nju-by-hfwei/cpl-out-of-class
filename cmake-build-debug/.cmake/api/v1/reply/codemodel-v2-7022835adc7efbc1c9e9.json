@@ -16,7 +16,8 @@
 						6,
 						7,
 						8,
-						9
+						9,
+						10
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -38,7 +39,7 @@
 					"source" : "code-style",
 					"targetIndexes" : 
 					[
-						17
+						20
 					]
 				},
 				{
@@ -55,12 +56,12 @@
 					[
 						0,
 						1,
-						8,
-						9,
 						10,
 						11,
 						12,
-						13
+						13,
+						14,
+						15
 					]
 				},
 				{
@@ -75,7 +76,7 @@
 					"source" : "if",
 					"targetIndexes" : 
 					[
-						16
+						19
 					]
 				},
 				{
@@ -91,7 +92,7 @@
 					"targetIndexes" : 
 					[
 						3,
-						7
+						9
 					]
 				},
 				{
@@ -106,8 +107,8 @@
 					"source" : "timing",
 					"targetIndexes" : 
 					[
-						5,
-						14
+						7,
+						16
 					]
 				},
 				{
@@ -123,8 +124,8 @@
 					"targetIndexes" : 
 					[
 						2,
-						6,
-						18
+						8,
+						21
 					]
 				},
 				{
@@ -154,7 +155,24 @@
 					"source" : "string",
 					"targetIndexes" : 
 					[
-						15
+						18
+					]
+				},
+				{
+					"build" : "pointers",
+					"jsonFile" : "directory-pointers-Debug-af4129d963284cc60061.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "pointers",
+					"targetIndexes" : 
+					[
+						5,
+						6,
+						17
 					]
 				},
 				{
@@ -184,7 +202,8 @@
 						6,
 						7,
 						8,
-						9
+						9,
+						10
 					],
 					"name" : "2023-cpl-coding-2",
 					"targetIndexes" : 
@@ -207,7 +226,10 @@
 						15,
 						16,
 						17,
-						18
+						18,
+						19,
+						20,
+						21
 					]
 				}
 			],
@@ -246,6 +268,20 @@
 					"id" : "func-void::@fee37dd4815cd343ba16",
 					"jsonFile" : "target-func-void-Debug-cefbf6d1c049e9006bbb.json",
 					"name" : "func-void",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "nullptr::@e33493d8a5746d5311fb",
+					"jsonFile" : "target-nullptr-Debug-99bf4bc7a3c9934ec1c5.json",
+					"name" : "nullptr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "pointers-with-const::@e33493d8a5746d5311fb",
+					"jsonFile" : "target-pointers-with-const-Debug-f8b59583022af88af659.json",
+					"name" : "pointers-with-const",
 					"projectIndex" : 0
 				},
 				{
@@ -316,6 +352,13 @@
 					"id" : "selection-sort::@fdfa0d39ba135ad398b9",
 					"jsonFile" : "target-selection-sort-Debug-8fc3da74ee29d460353a.json",
 					"name" : "selection-sort",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "sizeof::@e33493d8a5746d5311fb",
+					"jsonFile" : "target-sizeof-Debug-9c83975a678c83e905a5.json",
+					"name" : "sizeof",
 					"projectIndex" : 0
 				},
 				{
