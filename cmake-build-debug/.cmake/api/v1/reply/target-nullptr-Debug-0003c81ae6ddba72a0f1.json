@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "pointers/sizeof.exe"
+			"path" : "pointers/nullptr.exe"
 		},
 		{
-			"path" : "pointers/sizeof.pdb"
+			"path" : "pointers/nullptr.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 4,
+				"line" : 6,
 				"parent" : 0
 			}
 		]
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "sizeof::@e33493d8a5746d5311fb",
+	"id" : "nullptr::@e33493d8a5746d5311fb",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +76,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "sizeof",
-	"nameOnDisk" : "sizeof.exe",
+	"name" : "nullptr",
+	"nameOnDisk" : "nullptr.exe",
 	"paths" : 
 	{
 		"build" : "pointers",
@@ -98,7 +98,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "pointers/array-and-pointer.c",
+			"path" : "pointers/nullptr.c",
 			"sourceGroupIndex" : 0
 		}
 	],

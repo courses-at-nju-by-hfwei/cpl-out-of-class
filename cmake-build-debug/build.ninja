@@ -920,6 +920,72 @@ build string/rebuild_cache: phony string/CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
+# Object build statements for EXECUTABLE target array-and-pointer
+
+
+#############################################
+# Order-only phony target for array-and-pointer
+
+build cmake_object_order_depends_target_array-and-pointer: phony || pointers/CMakeFiles/array-and-pointer.dir
+
+build pointers/CMakeFiles/array-and-pointer.dir/array-and-pointer.c.obj: C_COMPILER__array-and-pointer_unscanned_Debug D$:/cpl/cpl-out-of-class/pointers/array-and-pointer.c || cmake_object_order_depends_target_array-and-pointer
+  DEP_FILE = pointers\CMakeFiles\array-and-pointer.dir\array-and-pointer.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = pointers\CMakeFiles\array-and-pointer.dir
+  OBJECT_FILE_DIR = pointers\CMakeFiles\array-and-pointer.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target array-and-pointer
+
+
+#############################################
+# Link the executable pointers\array-and-pointer.exe
+
+build pointers/array-and-pointer.exe: C_EXECUTABLE_LINKER__array-and-pointer_Debug pointers/CMakeFiles/array-and-pointer.dir/array-and-pointer.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = pointers\CMakeFiles\array-and-pointer.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pointers\array-and-pointer.exe
+  TARGET_IMPLIB = pointers\libarray-and-pointer.dll.a
+  TARGET_PDB = array-and-pointer.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target pointers-malloc
+
+
+#############################################
+# Order-only phony target for pointers-malloc
+
+build cmake_object_order_depends_target_pointers-malloc: phony || pointers/CMakeFiles/pointers-malloc.dir
+
+build pointers/CMakeFiles/pointers-malloc.dir/pointers-malloc.c.obj: C_COMPILER__pointers-malloc_unscanned_Debug D$:/cpl/cpl-out-of-class/pointers/pointers-malloc.c || cmake_object_order_depends_target_pointers-malloc
+  DEP_FILE = pointers\CMakeFiles\pointers-malloc.dir\pointers-malloc.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = pointers\CMakeFiles\pointers-malloc.dir
+  OBJECT_FILE_DIR = pointers\CMakeFiles\pointers-malloc.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pointers-malloc
+
+
+#############################################
+# Link the executable pointers\pointers-malloc.exe
+
+build pointers/pointers-malloc.exe: C_EXECUTABLE_LINKER__pointers-malloc_Debug pointers/CMakeFiles/pointers-malloc.dir/pointers-malloc.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = pointers\CMakeFiles\pointers-malloc.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pointers\pointers-malloc.exe
+  TARGET_IMPLIB = pointers\libpointers-malloc.dll.a
+  TARGET_PDB = pointers-malloc.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target pointers-with-const
 
 
@@ -985,39 +1051,6 @@ build pointers/nullptr.exe: C_EXECUTABLE_LINKER__nullptr_Debug pointers/CMakeFil
   TARGET_IMPLIB = pointers\libnullptr.dll.a
   TARGET_PDB = nullptr.exe.dbg
 
-# =============================================================================
-# Object build statements for EXECUTABLE target sizeof
-
-
-#############################################
-# Order-only phony target for sizeof
-
-build cmake_object_order_depends_target_sizeof: phony || pointers/CMakeFiles/sizeof.dir
-
-build pointers/CMakeFiles/sizeof.dir/array-and-pointer.c.obj: C_COMPILER__sizeof_unscanned_Debug D$:/cpl/cpl-out-of-class/pointers/array-and-pointer.c || cmake_object_order_depends_target_sizeof
-  DEP_FILE = pointers\CMakeFiles\sizeof.dir\array-and-pointer.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = pointers\CMakeFiles\sizeof.dir
-  OBJECT_FILE_DIR = pointers\CMakeFiles\sizeof.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target sizeof
-
-
-#############################################
-# Link the executable pointers\sizeof.exe
-
-build pointers/sizeof.exe: C_EXECUTABLE_LINKER__sizeof_Debug pointers/CMakeFiles/sizeof.dir/array-and-pointer.c.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = pointers\CMakeFiles\sizeof.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = pointers\sizeof.exe
-  TARGET_IMPLIB = pointers\libsizeof.dll.a
-  TARGET_PDB = sizeof.exe.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -1072,6 +1105,10 @@ build misc/rebuild_cache: phony misc/CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build array-and-pointer: phony pointers/array-and-pointer.exe
+
+build array-and-pointer.exe: phony pointers/array-and-pointer.exe
+
 build cref-ex: phony io/cref-ex.exe
 
 build cref-ex.exe: phony io/cref-ex.exe
@@ -1095,6 +1132,10 @@ build func-void.exe: phony function/func-void.exe
 build nullptr: phony pointers/nullptr.exe
 
 build nullptr.exe: phony pointers/nullptr.exe
+
+build pointers-malloc: phony pointers/pointers-malloc.exe
+
+build pointers-malloc.exe: phony pointers/pointers-malloc.exe
 
 build pointers-with-const: phony pointers/pointers-with-const.exe
 
@@ -1139,10 +1180,6 @@ build scanf-indeterminate.exe: phony io/scanf-indeterminate.exe
 build selection-sort: phony timing/selection-sort.exe
 
 build selection-sort.exe: phony timing/selection-sort.exe
-
-build sizeof: phony pointers/sizeof.exe
-
-build sizeof.exe: phony pointers/sizeof.exe
 
 build string-literals: phony string/string-literals.exe
 
@@ -1217,7 +1254,7 @@ build misc/all: phony
 #############################################
 # Folder: D:/cpl/cpl-out-of-class/cmake-build-debug/pointers
 
-build pointers/all: phony pointers/pointers-with-const.exe pointers/nullptr.exe pointers/sizeof.exe
+build pointers/all: phony pointers/array-and-pointer.exe pointers/pointers-malloc.exe pointers/pointers-with-const.exe pointers/nullptr.exe
 
 # =============================================================================
 
