@@ -986,6 +986,39 @@ build pointers/pointers-malloc.exe: C_EXECUTABLE_LINKER__pointers-malloc_Debug p
   TARGET_PDB = pointers-malloc.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target bsearch-function-pointer
+
+
+#############################################
+# Order-only phony target for bsearch-function-pointer
+
+build cmake_object_order_depends_target_bsearch-function-pointer: phony || pointers/CMakeFiles/bsearch-function-pointer.dir
+
+build pointers/CMakeFiles/bsearch-function-pointer.dir/bsearch-function-pointer.c.obj: C_COMPILER__bsearch-function-pointer_unscanned_Debug D$:/cpl/cpl-out-of-class/pointers/bsearch-function-pointer.c || cmake_object_order_depends_target_bsearch-function-pointer
+  DEP_FILE = pointers\CMakeFiles\bsearch-function-pointer.dir\bsearch-function-pointer.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = pointers\CMakeFiles\bsearch-function-pointer.dir
+  OBJECT_FILE_DIR = pointers\CMakeFiles\bsearch-function-pointer.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target bsearch-function-pointer
+
+
+#############################################
+# Link the executable pointers\bsearch-function-pointer.exe
+
+build pointers/bsearch-function-pointer.exe: C_EXECUTABLE_LINKER__bsearch-function-pointer_Debug pointers/CMakeFiles/bsearch-function-pointer.dir/bsearch-function-pointer.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = pointers\CMakeFiles\bsearch-function-pointer.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = pointers\bsearch-function-pointer.exe
+  TARGET_IMPLIB = pointers\libbsearch-function-pointer.dll.a
+  TARGET_PDB = bsearch-function-pointer.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target pointers-with-const
 
 
@@ -1108,6 +1141,10 @@ build misc/rebuild_cache: phony misc/CMakeFiles/rebuild_cache.util
 build array-and-pointer: phony pointers/array-and-pointer.exe
 
 build array-and-pointer.exe: phony pointers/array-and-pointer.exe
+
+build bsearch-function-pointer: phony pointers/bsearch-function-pointer.exe
+
+build bsearch-function-pointer.exe: phony pointers/bsearch-function-pointer.exe
 
 build cref-ex: phony io/cref-ex.exe
 
@@ -1254,7 +1291,7 @@ build misc/all: phony
 #############################################
 # Folder: D:/cpl/cpl-out-of-class/cmake-build-debug/pointers
 
-build pointers/all: phony pointers/array-and-pointer.exe pointers/pointers-malloc.exe pointers/pointers-with-const.exe pointers/nullptr.exe
+build pointers/all: phony pointers/array-and-pointer.exe pointers/pointers-malloc.exe pointers/bsearch-function-pointer.exe pointers/pointers-with-const.exe pointers/nullptr.exe
 
 # =============================================================================
 
