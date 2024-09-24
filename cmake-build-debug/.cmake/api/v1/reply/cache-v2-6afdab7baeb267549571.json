@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "26"
+			"value" : "30"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "4"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -151,7 +151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/hfwei/AppData/Local/Programs/CLion 3/bin/cmake/win/x64/bin/cmake.exe"
+			"value" : "C:/Users/hfwei/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -163,7 +163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/hfwei/AppData/Local/Programs/CLion 3/bin/cmake/win/x64/bin/cpack.exe"
+			"value" : "C:/Users/hfwei/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/hfwei/AppData/Local/Programs/CLion 3/bin/cmake/win/x64/bin/ctest.exe"
+			"value" : "C:/Users/hfwei/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -931,7 +931,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/hfwei/AppData/Local/Programs/CLion 3/bin/cmake/win/x64/share/cmake-3.26"
+			"value" : "C:/Users/hfwei/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.30"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1140,6 +1140,22 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "D:/mingw64/bin/strip.exe"
+		},
+		{
+			"name" : "CMAKE_TAPI",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_TAPI-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",

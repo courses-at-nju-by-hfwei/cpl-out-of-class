@@ -8,3 +8,5 @@ add_executable(cref-note cref-note.c)
 add_executable(cref-ex cref-ex.c)
 
 add_executable(scanf-indeterminate scanf-indeterminate.c)
+
+add_executable(scanf-f-double scanf-f-double.c)

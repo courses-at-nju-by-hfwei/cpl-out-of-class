@@ -39,7 +39,7 @@
 					"source" : "code-style",
 					"targetIndexes" : 
 					[
-						22
+						23
 					]
 				},
 				{
@@ -61,7 +61,8 @@
 						15,
 						16,
 						17,
-						18
+						18,
+						19
 					]
 				},
 				{
@@ -76,7 +77,7 @@
 					"source" : "if",
 					"targetIndexes" : 
 					[
-						21
+						22
 					]
 				},
 				{
@@ -108,7 +109,7 @@
 					"targetIndexes" : 
 					[
 						10,
-						19
+						20
 					]
 				},
 				{
@@ -125,7 +126,7 @@
 					[
 						4,
 						11,
-						23
+						24
 					]
 				},
 				{
@@ -155,7 +156,7 @@
 					"source" : "string",
 					"targetIndexes" : 
 					[
-						20
+						21
 					]
 				},
 				{
@@ -233,7 +234,8 @@
 						20,
 						21,
 						22,
-						23
+						23,
+						24
 					]
 				}
 			],
@@ -367,6 +369,13 @@
 				},
 				{
 					"directoryIndex" : 2,
+					"id" : "scanf-f-double::@9998546b0f8df173ae92",
+					"jsonFile" : "target-scanf-f-double-Debug-505461da4e9695b266ea.json",
+					"name" : "scanf-f-double",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
 					"id" : "scanf-indeterminate::@9998546b0f8df173ae92",
 					"jsonFile" : "target-scanf-indeterminate-Debug-185837ee0d5c82694486.json",
 					"name" : "scanf-indeterminate",
@@ -419,6 +428,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 5
+		"minor" : 7
 	}
 }
