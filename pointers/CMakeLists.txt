@@ -4,3 +4,6 @@ add_executable(bsearch-function-pointer bsearch-function-pointer.c)
 
 add_executable(pointers-with-const pointers-with-const.c)
 add_executable(nullptr nullptr.c)
+
+add_executable(qsort-array-of-strings qsort-array-of-strings.c)
+add_executable(qsort-strings qsort-strings.c)
