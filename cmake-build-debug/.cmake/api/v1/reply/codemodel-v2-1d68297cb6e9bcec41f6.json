@@ -17,7 +17,8 @@
 						7,
 						8,
 						9,
-						10
+						10,
+						11
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -39,7 +40,7 @@
 					"source" : "code-style",
 					"targetIndexes" : 
 					[
-						25
+						26
 					]
 				},
 				{
@@ -56,13 +57,13 @@
 					[
 						2,
 						3,
-						15,
 						16,
 						17,
 						18,
 						19,
 						20,
-						21
+						21,
+						22
 					]
 				},
 				{
@@ -77,7 +78,7 @@
 					"source" : "if",
 					"targetIndexes" : 
 					[
-						24
+						25
 					]
 				},
 				{
@@ -93,7 +94,7 @@
 					"targetIndexes" : 
 					[
 						5,
-						14
+						15
 					]
 				},
 				{
@@ -109,7 +110,7 @@
 					"targetIndexes" : 
 					[
 						10,
-						22
+						23
 					]
 				},
 				{
@@ -125,8 +126,23 @@
 					"targetIndexes" : 
 					[
 						4,
-						13,
-						26
+						14,
+						27
+					]
+				},
+				{
+					"build" : "generic",
+					"jsonFile" : "directory-generic-Debug-2a892b61a984151d5045.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "generic",
+					"targetIndexes" : 
+					[
+						11
 					]
 				},
 				{
@@ -156,7 +172,7 @@
 					"source" : "string",
 					"targetIndexes" : 
 					[
-						23
+						24
 					]
 				},
 				{
@@ -176,8 +192,8 @@
 						7,
 						8,
 						9,
-						11,
-						12
+						12,
+						13
 					]
 				},
 				{
@@ -208,7 +224,8 @@
 						7,
 						8,
 						9,
-						10
+						10,
+						11
 					],
 					"name" : "2023-cpl-coding-2",
 					"targetIndexes" : 
@@ -239,21 +256,22 @@
 						23,
 						24,
 						25,
-						26
+						26,
+						27
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 9,
+					"directoryIndex" : 10,
 					"id" : "array-and-pointer::@e33493d8a5746d5311fb",
 					"jsonFile" : "target-array-and-pointer-Debug-ee4286b033c45fab2945.json",
 					"name" : "array-and-pointer",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 9,
+					"directoryIndex" : 10,
 					"id" : "bsearch-function-pointer::@e33493d8a5746d5311fb",
 					"jsonFile" : "target-bsearch-function-pointer-Debug-20619c39e835e2c2dcba.json",
 					"name" : "bsearch-function-pointer",
@@ -288,28 +306,28 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 7,
+					"directoryIndex" : 8,
 					"id" : "func-void::@fee37dd4815cd343ba16",
 					"jsonFile" : "target-func-void-Debug-cefbf6d1c049e9006bbb.json",
 					"name" : "func-void",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 9,
+					"directoryIndex" : 10,
 					"id" : "nullptr::@e33493d8a5746d5311fb",
 					"jsonFile" : "target-nullptr-Debug-0003c81ae6ddba72a0f1.json",
 					"name" : "nullptr",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 9,
+					"directoryIndex" : 10,
 					"id" : "pointers-malloc::@e33493d8a5746d5311fb",
 					"jsonFile" : "target-pointers-malloc-Debug-b7e3a1ab48eff782eaf6.json",
 					"name" : "pointers-malloc",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 9,
+					"directoryIndex" : 10,
 					"id" : "pointers-with-const::@e33493d8a5746d5311fb",
 					"jsonFile" : "target-pointers-with-const-Debug-033701cc2edd43305825.json",
 					"name" : "pointers-with-const",
@@ -323,14 +341,21 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 9,
+					"directoryIndex" : 7,
+					"id" : "print::@37d6f05d15bb5d85d61e",
+					"jsonFile" : "target-print-Debug-b7a47fd43ca01daa4a73.json",
+					"name" : "print",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
 					"id" : "qsort-array-of-strings::@e33493d8a5746d5311fb",
 					"jsonFile" : "target-qsort-array-of-strings-Debug-0c1a47e5cac9944276d7.json",
 					"name" : "qsort-array-of-strings",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 9,
+					"directoryIndex" : 10,
 					"id" : "qsort-strings::@e33493d8a5746d5311fb",
 					"jsonFile" : "target-qsort-strings-Debug-871011ed7664102424c5.json",
 					"name" : "qsort-strings",
@@ -407,7 +432,7 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 8,
+					"directoryIndex" : 9,
 					"id" : "string-literals::@22e829107201c6b975b1",
 					"jsonFile" : "target-string-literals-Debug-167c7b85f4874439e2d7.json",
 					"name" : "string-literals",

@@ -125,6 +125,9 @@
 			"path" : "static/CMakeLists.txt"
 		},
 		{
+			"path" : "generic/CMakeLists.txt"
+		},
+		{
 			"path" : "function/CMakeLists.txt"
 		},
 		{

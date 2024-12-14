@@ -1,12 +1,8 @@
-// Created by hengxin on 2024/12/04.
+// Created by hengxin on 2024/12/14.
 
-#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-typedef int (*CompareFunction)(const void *, const void *);
-typedef int CompFunc(const void *, const void *);
 
 int CompareStrs(const void *left, const void *right);
 int CompareStrsWrong(const void *left, const void *right);
@@ -19,8 +15,6 @@ int main() {
   /**
    * void qsort( void *ptr, size_t count, size_t size,
             int (*comp)(const void *, const void *) );
-   * typedef int _Cmpfun(const void *, const void *);
-   * void qsort( void *ptr, size_t count, size_t size, _Cmpfun *comp);
    */
   const char *names[] = {
       "Luo Dayou", "Cui Jian", "Dou Wei", "Zhang Chu",   "Wan Qing",
